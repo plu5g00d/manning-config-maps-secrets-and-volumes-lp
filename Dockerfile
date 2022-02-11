@@ -1,4 +1,4 @@
-FROM mhart/alpine-node:14.17.3
+FROM node:14-alpine As development
 
 COPY package*.json ./
 
