@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(express.static('public'));
 
 app.listen(3000, function () {
-    console.log('HomeJoy app listening on port 5000!');
+    console.log('BuildYourHome app listening on port 5000!');
   });
 
 app.get('/welcome', function(req, res) {

@@ -1,5 +1,5 @@
-# HomeJoy Application
-Homejoy NodeJS application
+# BuildYourHome Application
+BuildYourHome NodeJS application
 
 ## Installation
 
