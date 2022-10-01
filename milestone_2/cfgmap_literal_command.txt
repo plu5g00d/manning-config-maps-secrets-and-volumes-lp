@@ -1,0 +1,3 @@
+## Command used to create ConfigMap object from-literal
+% kubectl create cm shopping-config -n shopping --from-literal status_message="Hello from literal config map"
+configmap/shopping-config created

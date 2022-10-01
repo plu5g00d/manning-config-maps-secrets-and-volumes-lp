@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+    name: shopping-config
+    namespace: shopping
+data:
+    status_message: Hello from the config map
