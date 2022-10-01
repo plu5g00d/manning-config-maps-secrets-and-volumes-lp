@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: shopping
+  name: shopping-deploy-v1
+  namespace: shopping
+spec:
+  replicas: 3 
+  selector:
+    matchLabels:
+      app: shopping
+      version: "v1.0"
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: shopping
+        version: "v1.0"
+    spec:
+      containers:
+      - image: manningkubernetes/shopping-p4:1.0
+        name: shopping
+        env:
+        - name: INITIAL_STATUS_MESSAGE
+          value: "Set status message from environment variable"
+        resources: {}
+status: {}
