@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: shopping
+  name: shopping-deploy-v2
+  namespace: shopping
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: shopping
+      version: "v2.0"
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: shopping
+        version: "v2.0"
+    spec:
+      volumes:
+      - name: shopping-creds
+        secret:
+          secretName: shopping-credentials
+          items:
+          - key: password
+            path: password.txt
+          - key: username
+            path: username.txt
+      containers:
+      - image: manningkubernetes/shopping-p4:1.0
+        name: shopping
+        volumeMounts:
+        - name: shopping-creds
+          mountPath: /etc/creds
+          readOnly: true
+        resources: {}
+status: {}
