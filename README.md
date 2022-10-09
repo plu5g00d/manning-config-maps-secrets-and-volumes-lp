@@ -1,3 +1,6 @@
+# Manning liveProject [Getting Started with Kubernetes] (https://www.manning.com/liveprojectseries/getting-started-with-kubernetes-ser)
+## Project 4 [Config Maps, Secrets, and Volumes] (https://www.manning.com/liveproject/config-maps-secrets-and-volumes)
+
 # BuildYourHome Application
 BuildYourHome NodeJS application
 
