@@ -14,8 +14,10 @@ This liveProject is divided into 5 milestones.
 5. Persistent Volumes - [Submission for milestone 5](https://github.com/plu5g00d/manning-config-maps-secrets-and-volumes-lp/tree/main/milestone_5)
 
 ## Initial project setup provided by Manning -
-## BuildYourHome Application
+
+## BuildYourHome Application - NodeJS-Shopping-Cart
 BuildYourHome NodeJS application
+Example integration of Stripe's Checkout API into a Node.js application
 
 ## Installation
 
